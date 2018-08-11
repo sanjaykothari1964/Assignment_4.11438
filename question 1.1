@@ -1,0 +1,21 @@
+import math
+class trianglearea():
+    def __init__(self,a,b,c):
+        self.a=a
+        self.b= b
+        self.c=c
+   
+    def perimeter(self):
+        p=(self.a+self.b+self.c)
+        return(p)
+    def area(self):
+        p=(self.a+self.b+self.c)/2
+        a=(p*(p-self.a)*(p-self.b)*(p-self.c))**0.5
+        
+        return(a) 
+a=int(input("Enter 1st side of the triangle"))
+b=int(input("Enter  2nd side of the triangle"))
+c=int(input("Enter 3rd  side of the triangle"))
+obj=trianglearea(a,b,c)
+print("Area of triangle:",round(obj.area(),2))
+print("Perimeter of triangle:",round(obj.perimeter(),2))
