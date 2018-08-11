@@ -1,0 +1,13 @@
+def filter_long_words(l,a):
+    words=[]
+    for j in l:
+        if(len(j)>=a):
+            words.append(j)
+    return words
+
+n=input("Enter words:")
+nt=n.split(",")
+na=input("Enter Min Length:")
+long=filter_long_words(nt,int(na))
+
+print("Words with at least min length:",long)
